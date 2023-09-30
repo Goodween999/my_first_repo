@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Медиа запросы</title>
+    <style>
+        .container {
+            width: 1200px;
+            margin: auto;
+        }
+        .block {
+            display: inline-block;
+            width: 550px;
+        }
+        .invisible-block {
+            display: none;
+        }
+        @media (max-width: 1250px) {
+            .container {
+                width: 100%;
+            }
+            .block {
+                display: block;
+                width: 100%;
+            }
+            .block img {
+                width: 100%;
+                height: auto;
+            }
+            .block p {
+                font-size: 1.75rem;
+                color: rgb(124, 115, 115);
+            }
+            @media (max-width: 760px) {
+                .invisible-block {
+                    display: block;
+                    font-size: 2rem;
+                    color: red;
+                }
+            }
+        }
+        /* @media (условия) {
+            CSS код, который будет выполнен для этого условия
+        } */
+        /* @media (orientation: portrait) {
+            body {
+                background-color: bisque;
+            }
+        }
+        /* @media print {
+            
+        } */
+        /* @media (max-width: 1400px) {
+
+        } */
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="block">
+        <img src="img/html_5.png" alt="" width="100%"> 
+        </div>
+        <div class="block">
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+            Odio veritatis neque quidem autem magni ut provident est quae!
+            Rem consequuntur magnam nostrum officiis incidunt id 
+            recusandae quisquam eius tempore molestiae.</p>
+            </div>
+    </div>
+    <div class="invisible-block">Ваш бонус 10%</div>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/icons8.png">
+    <title>Светофор</title>
+    <style> /*Добавление стилей https://htmlbook.ru/samcss/sposoby-dobavleniya-stiley-na-stranitsu*/
+        * {
+            box-sizing: border-box; /* Применяется для изменения алгоритма расчета ширины и высоты элемента. https://htmlbook.ru/css/box-sizing*/
+        }
+      .container {
+        width: 200px; /* Ширина элемента https://htmlbook.ru/css/width*/
+        height: 400px; /* Высота элемента https://htmlbook.ru/css/height*/
+        background-color: black; /* Цвет фона элемента https://htmlbook.ru/css/background-color*/
+        padding-top: 25px; /* Устанавливает значение поля от верхнего края содержимого элемента. https://htmlbook.ru/css/padding-top*/
+        border-radius: 5px; /* Устанавливает радиус скругления уголков рамки. https://htmlbook.ru/css/border-radius*/
+        margin-top: 50px; /* Устанавливает величину отступа от верхнего края элемента. https://htmlbook.ru/css/margin-top*/
+        }
+        .red, /*класс*/
+        .yellow,
+        .green {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin: auto; /* Устанавливает величину отступа от каждого края элемента. https://htmlbook.ru/css/margin*/
+            margin-bottom: 25px; /* Устанавливает величину отступа от нижнего края элемента. https://htmlbook.ru/css/margin-bottom*/
+            border: gray solid 2px; /* Универсальное свойство border позволяет одновременно установить толщину, стиль и цвет границы вокруг элемента. https://htmlbook.ru/css/border*/
+            box-shadow: inset 0 0 15px rgb(165, 164, 164); /* Добавляет тень к элементу. https://htmlbook.ru/css/box-shadow*/
+            border-color: gray;
+            cursor: pointer;
+        }
+        .red:hover {
+            background-color: red;
+            }
+        .yellow:hover {
+            background-color: yellow;
+         }
+        .green:hover {
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+     <div class="red"></div>
+     <div class="yellow"></div>
+     <div class="green"></div>
+    </div>
+</body>
+</html>

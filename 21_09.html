@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Каскадность и специфичность</title>
+    <style>
+        body {
+            font-size: 1.5rem;
+        }
+        button {
+            color: red;
+        }
+        button {
+            color: blue;
+        }
+        .p {
+            color: green !important;
+        }
+        .red {
+            color: red;
+        }
+        #blue {
+            color: blue;
+        }
+        .blue {
+            color: blue;
+            font-size: 2rem;
+            font-size: clamp(2rem, calc(1rem + 4vw), 3rem);
+        }
+    </style>
+</head>
+<body>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perferendis a architecto reprehenderit repudiandae, odio fugiat qui laboriosam quasi harum debitis ipsa, ad est vitae asperiores ut magnam, totam quaerat fuga!</p>
+    <button >Привет, я к нопка с цветным текстом</button>
+    <p id="blue" class="red">Какого цвета наш параграф</p>
+    <div class="red blue">Текст</div>
+    <div class="blue red">Текст</div>
+</body>
+</html>
